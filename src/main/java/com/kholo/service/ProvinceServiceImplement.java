@@ -14,11 +14,6 @@ public class ProvinceServiceImplement implements ProvinceService{
     private ProvinceRepository provinceRepository;
 
     @Override
-    public Province createProvince(Province province) {
-        return provinceRepository.save(province);
-    }
-
-    @Override
     public List<Province> getAllProvinces() {
         return provinceRepository.findAll();
     }
